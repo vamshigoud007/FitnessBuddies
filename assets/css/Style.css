@@ -1,0 +1,76 @@
+body{background: white;background:white;margin: 0}
+	a,a:hover{color:black;}
+.Link_connections{clear:both;float:left}
+.right_class p{float:right !important;width:20% !important;}
+v,v:hover{color: black;text-decoration: underline;}
+.container{width : 1080px;margin : 0 auto;}
+.main_content{height: 450px;clear:both;position:relative}
+.logo{float: left;background:grey;padding-left: 15px}
+.elements_on_right{float: right;padding-top: 20px;}
+.elements_on_right ul {padding: 0;}
+.heading{text-align: left}
+.elements_on_right ul li {display: inline-block;margin-right: 25px;}
+.elements_on_right ul li:hover{border-bottom: 3px coral;}
+.main_heading{height: 120px; background: grey}
+.main_heading img{width: 90px;background:grey}
+.main_heading p{float: left;width: 100%;padding-left: 10px;line-height: 15px;padding-top:10px}
+p.user_name {float: right;padding-left: 0px;margin: 0;text-align: right;margin-top: -26px;}
+.footer{background-color: grey; padding: 10px 0px 12px 0px;width :100%;bottom:0}
+.footer_elements ul{padding-left: 15px;margin-bottom:0 }
+.footer_elements ul li {display: inline-block;margin-right: 30px;}
+p{margin-bottom: 0;}
+.main_content h1{margin-bottom: 55px;text-align: center}
+.main_content.about h1,.main_content.contact h1{text-align: left;}
+.main_content{background-image: url('../images/background.jpg');padding-top: 1px}
+.main_content p {font-size: 15px;text-align: center;align:center;font-weight:bold}
+.main_content.about p,.main_content.contact p{text-align: left;}
+.content_for_connections{background-image: url('../images/background.jpg');min-height: 500px;padding-top: 1px;}
+.content_for_connection{background-image: url('../images/background.jpg');min-height: 500px;position: relative; padding-top: 50px;}
+.responses{float:right;padding-top: 87px;position: absolute;right: 35%;top: 0;}
+.details_box{width:50%;}
+.content {clear: both;padding-top:60px;width:400px}
+.Content{background-image: url('../images/background.jpg');min-height: 500px;padding-top: 1px;}
+.image_of_host {float: left;margin-right: 10px;}
+.image_of_host img{width: 150px; height: 120px}
+.responses ul li{display:inline;list-style:none;padding-top: 500px}
+.savedConnections_content {min-height: 450px;padding: 20px;background-image: url('../images/background.jpg');clear: both;}
+table,th,td{border:1px solid black;}
+.table td, .table th{border-top:1px solid black; padding: 6px;}
+ul.updates li {display: inline;list-style: none;}
+ul.updates li .green:hover{background:green;}
+ul.updates li .red:hover{background:red;}
+ul.updates li .blue:hover{background:blue;}
+#contact-form{text-align: center;}
+input[type="submit"] {
+margin-top: 10px;
+}
+#contact-form div{padding: 10px;}
+#contact-form div label{padding-right: 10px;}
+.abc{
+	background-image:url("../images/background.jpg");
+	background-size: cover;
+	padding-top:37px;
+	min-height: 400px;
+	text-align: center;
+}
+.signup_content{
+	background-image:url("../images/background.jpg");
+	background-size: cover;
+	padding-top:37px;
+	min-height: 400px;
+}
+.signup_content h3{padding-left: 26%;}
+.form_background {
+    padding-left: 29%;
+    padding-top: 20px;
+}
+form#connection-form div{padding:5px;}
+form#connection-form button{margin-left: 12%;}
+.signup-form {
+    padding-left: 25%;
+}
+form.signup-form div {
+    padding: 5px;
+}
+.signup-form label{margin: 10px;}
+.submit-but{padding-left: 10% !important;}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Fitness Buddies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" href="../assets/css/Style.css">
+
+</head>
+<body>
+
+<% include partials/header.ejs %>
+
+		 <div class="content_for_connections">
+       <%for(var i=0;i<categories.length;i++){%>
+           <h2><%= categories[i] %></h2>
+          <% for(var j=0;j < data.length; j++){%>
+              <% if(categories[i]==data[j].connectionTopic){%>
+                  <ul>
+                       <li><a href="/connection?connectionId=<%= data[j].connectionID %>"><%= data[j].connectionName %></a></li>
+                  </ul>
+              <% } %>
+          <%  }  %>
+        <% };   %>
+			  </div>
+
+  <% include partials/footer.ejs %>
+
+
+	   </body>
+	   </html>

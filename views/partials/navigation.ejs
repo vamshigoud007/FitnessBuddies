@@ -1,0 +1,19 @@
+<div class="elements_on_right">
+  <% if(user){%>
+  <ul>
+    <li>Welcome <%= user.FirstName %></li>
+<li><a href="newConnection">New Fitness Event</a></li>
+<li><a href="/logout">Log out</a></li>
+<li><a href="savedConnections">My Fitness connnections</a></li>
+</ul>
+
+<% }else{%>
+  <ul>
+    <li><a href="newConnection">New Fitness Event</a></li>
+    <li><a href="/login">Log In</a></li>
+    <li><a href="signup">Sign up</a></li>
+    </ul>
+
+    <%}%>
+
+</div>

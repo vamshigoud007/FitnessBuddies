@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Fitness Buddies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" href="../assets/css/Style.css">
+
+</head>
+<body>
+   <% include partials/header.ejs %>
+
+	 <div class="content_for_connection">
+	     <div class="details_of_contents">
+
+		  <h4><%= result.connectionName %></h4>
+		  <div class="details_box">
+		  <div class="image_of_host">
+		  <img src= "<%= result.imageUrl%>" alt="DJ">
+		 </div>
+     <%if(modify){%>
+   <form method="post" >
+     <button class="button1" onclick="window.location.href='/update?connectionId=<%=result.connectionID %>'" type="button">Update</button>
+     <button class="button2" formaction="/delete?connectionId=<%=result.connectionID %>" > Remove</button>
+   </form>
+  <%}%>
+	  <div class= "Details_of _the_event">
+    <p><%= result.location%></p>
+    <p><%= result.Date %></p>
+    <p><%= result.time %></p>
+
+	  </div>
+
+	    </div>
+		<div class ="responses">
+
+	  <h5>Train Insane or remain the same!!.<br/>Beast Mode on?</h5>
+    <%if(user){%>
+      <form method="post" >
+        <button class="button1" formaction= "/savedConnections?connectionId=<%=result.connectionID %>&RSVP=yes"> Yes</button>
+        <button class="button2" formaction="/savedConnections?connectionId=<%=result.connectionID %>&RSVP=no">No</button>
+        <button class="button3" formaction="/savedConnections?connectionId=<%=result.connectionID %>&RSVP=maybe">Maybe</button>
+        <input type="hidden" name ="action" value= "save">
+      </form>
+      <%}else{%>
+        <button onclick="window.location.href='connection?connectionId=<%=result.connectionID %>'" class = "button1" type="button">Yes</button>
+        <button onclick="window.location.href='connection?connectionId=<%=result.connectionID %>'" class = "button2" type="button">No</button>
+        <button onclick="window.location.href='connection?connectionId=<%=result.connectionID %>'" class = "button3" type="button">Maybe</button>
+      <%}%>
+        </div>
+    </div>
+
+		<div class="content">
+		<h4>Details</h4>
+
+		<p><%= result.Details%></p>
+		</div>
+
+		</div>
+  <% include partials/footer.ejs %>
+
+	  </body>
+	  </html>
